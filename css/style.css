@@ -53,6 +53,10 @@ nav{
     z-index: 10;
 }
 
+nav a .active{
+    background-color: rgba(255,255,255,.5);
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -83,10 +87,15 @@ a {
 
 }
 
+.inactive{
+    color:white; 
+}
 
-.menu-item:hover{
+.active, .menu-item:hover{
     color:var(--violet);
 }
+
+
 
 
 
