@@ -1,4 +1,5 @@
 @import url(bgpattern.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -16,7 +17,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     color: white;
     background-color: var(--bg);
@@ -135,13 +136,13 @@ a {
     margin: auto;
 }
 
-.brand-title {
+.logo {
     font-size: 1.5rem;
     margin: 1.5rem;
     color: white;
 }
 
-.brand-title a:hover{
+.logo a:hover{
     color:var(--violet);
 }
 
@@ -151,7 +152,7 @@ a {
 }
 
 
-.navbar-links ul {
+.navbar-menu ul {
     display: flex;
     margin: 0 2rem;
     padding: 0;
@@ -159,12 +160,12 @@ a {
     align-items: center;
 }
 
-.navbar-links li {
+.navbar-menu li {
     list-style: none;
     display: block;
 }
 
-.navbar-links li a {
+.navbar-menu li a {
     text-decoration: none;
     color: white;
     padding: 1rem;
@@ -172,7 +173,7 @@ a {
     
 }
 
-.navbar-links ul li :hover {
+.navbar-menu ul li :hover {
 background-color:var(--violet);
 }
 
@@ -200,7 +201,7 @@ background-color:var(--violet);
         overflow-x: hidden;
     }
 
-    .brand-title{
+    .logo{
         margin: 1.5rem 0 0 1.2rem;
     }
 
@@ -214,20 +215,20 @@ background-color:var(--violet);
         margin: 1.2rem 1.5rem 0 0;
     }
 
-    .navbar-links {
+    .navbar-menu {
         display: none;
         width: 100%;
     }
 
 
-    .navbar-links ul {
+    .navbar-menu ul {
         width: 100%;
         flex-direction: column;
         display: block;
         margin: 0;
     }
 
-    .navbar-links ul li {
+    .navbar-menu ul li {
         display: block;
         text-align: center;
         background-color: var(--bg-clear);
@@ -235,16 +236,16 @@ background-color:var(--violet);
         margin: 0;
     }
     
-    .navbar-links ul li:hover{
+    .navbar-menu ul li:hover{
         background-color: var(--violet);
     }
 
-    .navbar-links ul li a {
+    .navbar-menu ul li a {
         padding: .5rem 1rem;
         width: 100%;
     }
 
-    .navbar-links.active {
+    .navbar-menu.active {
         display: flex;
     }
 }
@@ -298,6 +299,7 @@ background-color:var(--violet);
 
 .about-me-title{
     margin: 5rem 0;
+    font-family: 'Poppins', sans-serif;
     font-size:52px;
     color: #fff;
     background: var(--gradient);
