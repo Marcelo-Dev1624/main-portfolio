@@ -20,6 +20,8 @@ body{
     margin: 0;
     color: white;
     background-color: var(--bg);
+    overflow-x: hidden;
+
 }
 
 /*NAV BAR STARTS */
@@ -53,9 +55,6 @@ nav{
     z-index: 10;
 }
 
-nav a .active{
-    background-color: rgba(255,255,255,.5);
-}
 
 nav ul li{
     list-style: none;
@@ -87,15 +86,19 @@ a {
 
 }
 
-.inactive{
-    color:white; 
-}
-
-.active, .menu-item:hover{
+.menu-item:hover{
     color:var(--violet);
 }
 
-
+.page-title{
+    margin: 1rem 0;
+    font-size:40px;
+    color: #fff;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 550;
+}
 
 
 
@@ -113,6 +116,7 @@ a {
     align-items: center;
     justify-content: center;
     color: white;
+    position: relative;
 
 }
 
@@ -133,7 +137,7 @@ a {
 
 
 .about-me-title{
-    margin: 2rem 0;
+    margin: 5rem 0;
     font-size:52px;
     color: #fff;
     background: var(--gradient);
@@ -142,6 +146,7 @@ a {
     font-weight: 550;
     animation: hero-load 650ms ease-out;
     transform: translateX(30px);
+
 }
 
 .about-me-text{
@@ -165,9 +170,10 @@ hr {
     border-left: 0 ;
     border-right: 0 ;
     width: 20%;
-    margin: 10px 40% ;
+    margin: 2rem 40% ;
     vertical-align: auto;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
+    
 }
 
 
@@ -184,19 +190,12 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.about-me-page-title{
-    margin: 2rem 0;
-    font-size:40px;
-    color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 550;
-}
 
 /* ABOUT ME PAGE FINISHES */
 
@@ -209,19 +208,13 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.contact-page-title{
-    margin: 2rem 0;
-    font-size:40px;
-    color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 550;
-}
 
 /* CONTACT PAGE FINISHES */
 
@@ -235,43 +228,68 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.work-page-title{
-    margin: 2rem 0;
-    font-size:40px;
-    color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 550;
-}
 
 /* WORK PAGE FINISHES */
 
 /* SETUP PAGE STARTS */
 
 .setup-page{
+    min-height: 100vh;
+    width: 100%;
     margin: 5rem 0;
     background-color:  var(--bg);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
+    position: relative;
 }
 
-.setup-page-title{
-    margin: 2rem 0;
-    font-size:40px;
-    color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 550;
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 2rem auto 5rem auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: var(--bg-clear);
+    padding: 10rem auto;
+    border-radius: 20px;
+    margin: 8rem 3rem;
+}
+
+
+.card-img {
+    width: 100%;
+    border: solid grey;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.card-body{
+    width: 100%;
+    background-color: var(--bg-clear);
+    padding: 1rem;
+    margin: 0;
+    border: solid grey;
+    border-radius: 0 0 20px 20px ;
 }
 
 /* SETUP PAGE FINISHES */
@@ -285,22 +303,94 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 60px;
+    margin-top: -60px;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.support-me-page-title{
-    margin: 2rem 0;
-    font-size:40px;
-    color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 550;
+.inner-section-support{
+    display: flex;
+    background-color: var(--bg-clear);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 800px;
+    width: 1200px;
+    border-radius: 25px;
+    padding: 5rem;
+    margin: 3rem 0 0 0;
+    box-shadow: 0 0 25px .5px rgb(10, 10, 10);
 }
+
+
+
+
+.support-me-page-thanks{
+    font-size:48px;
+    color: var(--violet);
+    font-weight: 500;
+}
+
+.support-me-text{
+    font-size: 22px;
+
+
+}
+
+.support-icon{
+    color: var(--violet);
+    font-size: 200;
+}
+
+.support-me-btn{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 50px;
+    margin:3rem ;
+    background-color: var(--violet);
+    border: solid var(--violet);
+    color:white;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 8 2 var(--bg-clear);
+    transition: 300ms ;
+}
+
+.support-me-btn:hover{
+    background-color: white;
+    border: solid white;
+    color:var(--violet);
+}
+
+.thanks-container{
+    margin: 1rem auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* SUPPORT ME PAGE FINISHES */
 
+
+/*FOOTER STARTS*/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    background-color: #1a1a1a;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer-text{
+    margin: auto 3rem;
+    font-weight: 400;
+}
 
 
 
