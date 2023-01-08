@@ -20,7 +20,6 @@ body{
     margin: 0;
     color: white;
     background-color: var(--bg);
-    overflow-x: hidden;
 
 }
 
@@ -29,8 +28,9 @@ body{
 
 
 .logo{
+    font-size: 1.5rem ;
     color: white;
-    margin: 0;
+    margin: 2rem;
     font-weight: 400;
     transition: 200ms;
 }
@@ -40,40 +40,45 @@ body{
     font-size: 28px;
 }
 
-nav{
-    top:0;
+
+/*
+.navbar{
     background-color: var(--bg-clear);
     position: fixed;
-    margin: auto;
     display: flex;
-    height: 5rem;
-    width: 100%;
     justify-content: space-between;
-    padding: 25px 10%;
     align-items: center;
+    width: 100%;
+    height: 5rem;
     animation: nav-load 400ms ease-out;
     z-index: 10;
 }
 
+.navbar-menu ul{
+    margin: 0 2rem;
+    padding: 0;
+    display: flex;
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
 }
 
-nav ul li a{
+.navbar-menu li{
+    list-style: none;
+
+}
+
+.navbar-menu  li a{
     text-decoration: none;
     color: white;
+    padding: 1rem;
+    display: block;
     transition: 200ms;
+    font-size: 1.3rem;
 }
 
-a {
-    text-decoration: none;
+.navbar-icons{
+    display: flex;
+    margin:2rem ;
 }
-
-
 .icon{
     font-size: 28px;
     color: white;
@@ -89,6 +94,161 @@ a {
 .menu-item:hover{
     color:var(--violet);
 }
+
+a {
+    text-decoration: none;
+}
+
+.toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 20px;
+}
+*/
+
+
+
+
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-clear);
+    color: white;
+    z-index: 4;
+    width: 100%;
+    height: 5rem;
+    margin: auto;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+}
+
+.brand-title a:hover{
+    color:var(--violet);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar-links ul {
+    display: flex;
+    margin: 0 2rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: block;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+.navbar-links ul li :hover {
+background-color:var(--violet);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .brand-title{
+        margin: 1.5rem 0 0 1.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+        margin: 1.2rem 1.5rem 0 0;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        margin: 0;
+    }
+
+    .navbar-links ul li {
+        display: block;
+        text-align: center;
+        background-color: var(--bg-clear);
+        padding: 1.5rem;
+        margin: 0;
+    }
+    
+    .navbar-links ul li:hover{
+        background-color: var(--violet);
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 .page-title{
     margin: 1rem 0;
@@ -457,42 +617,51 @@ footer{
 
 }
 
+/*
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
 
-  @media only screen and (min-width: 600px) {
-    body {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width:70%;
     }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    body {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%;
+
+    .navbar .logo{
+        display: flex;
+        justify-content: center;
     }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    body {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%;
+
+    .toggle-btn {
+        display: flex;
+        margin-top: 1.1rem;
     }
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    body {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
+
+    .navbar-menu {
+        display: none;
+        width: 100%;
     }
-  }
+
+    .navbar-menu ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-menu ul li {
+        text-align: center;
+    }
+
+    .navbar-menu ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+}
+*/
+
+
+
 
 
 
