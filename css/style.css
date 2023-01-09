@@ -599,6 +599,28 @@ footer{
     .navbar-menu.active {
         display: flex;
     }
+
+    .menu-item{
+        position: relative;
+    }
+
+    .subnav-block{
+        position: absolute;
+        min-width: 215px; /* or any width fits your idea */
+        top: 100%;
+        padding: .5rem 1rem;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px); /* i choosed translate for animation, you can choose what you prefer */
+     }
+    .menu-item:hover .subnav-block{
+     opacity: 1;
+     visibility:visible;
+     transform: translateY(0);
+ }
 }
 
 /* NAVBAR OPTIMIZATION ENDS*/
@@ -608,6 +630,7 @@ footer{
         display: block;
         width: 100%;
     }
+    
 
     .inner-hero{
         width: 80%;
@@ -615,6 +638,11 @@ footer{
         justify-content: center;
         align-items: center;
         
+    }
+
+    .about-me-title{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
     }
 
     .about-me-title, .about-me-text{
@@ -714,7 +742,7 @@ footer{
     }
 
     .inner-hero{
-        margin-top: 3rem;
+        margin-top: 5rem;
         width: 85%;
         position: relative;
         justify-content: center;
