@@ -154,7 +154,7 @@ a {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 550;
+    font-weight: 800;
 }
 
 
@@ -195,13 +195,12 @@ a {
 
 .about-me-title{
     margin: 5rem 0;
-    font-family: 'Poppins', sans-serif;
     font-size:52px;
     color: #fff;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 550;
+    font-weight: 800;
     animation: hero-load 650ms ease-out;
     transform: translateX(30px);
 
@@ -360,6 +359,7 @@ hr {
 
 .support-me-page{
     margin: 5rem 0;
+    position: relative;
     background-color:  var(--bg);
     display: flex;
     justify-content: center;
@@ -373,16 +373,17 @@ hr {
 
 .inner-section-support{
     display: flex;
+    position: absolute;
     background-color: var(--bg-clear);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 800px;
-    width: 1200px;
+    height: 75rem;
+    width: 220rem;
     border-radius: 25px;
     padding: 5rem;
-    margin: 3rem 0 0 0;
+    margin: 3rem 0 ;
     box-shadow: 0 0 25px .5px rgb(10, 10, 10);
 }
 
@@ -392,7 +393,7 @@ hr {
 .support-me-page-thanks{
     font-size:48px;
     color: var(--violet);
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .support-me-text{
@@ -404,13 +405,14 @@ hr {
 .support-icon{
     color: var(--violet);
     font-size: 200;
+    opacity: 0;
 }
 
 .support-me-btn{
     font-size: 24px;
     font-weight: 600;
     padding: 16px 50px;
-    margin:3rem ;
+    margin:2rem ;
     background-color: var(--violet);
     border: solid var(--violet);
     color:white;
@@ -520,6 +522,9 @@ footer{
 
 }
 
+
+
+
 /*OPTIMIZATIONS*/
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
@@ -625,7 +630,7 @@ footer{
 
 /* NAVBAR OPTIMIZATION ENDS*/
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     body{
         display: block;
         width: 100%;
@@ -728,10 +733,50 @@ footer{
 
     .navbar-menu.active {
         display: flex;
+        transition: 300ms;
     }
+
+
+
+    .inner-section-support{
+        margin: auto;
+        width: 85%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .support-me-text{
+        margin: auto .5rem;
+    }
+
+    .thanks-container{
+        flex-direction: column;
+    }
+
+    .support-me-btn{
+        padding: 10px 40px;
+    }
+
+    .support-icon{
+        opacity: 0;
+    }
+
+    .about-me-title, .about-me-text{
+        transform: translateX(0px);
+        animation: none;
+    }
+
+    .hero-img{
+        display: none;
 }
 
-@media only screen and (max-width:600px) {
+
+}
+
+@media only screen and (max-width:768px) {
     html{
         overflow-x: hidden;
     }
