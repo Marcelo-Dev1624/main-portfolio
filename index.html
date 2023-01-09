@@ -21,7 +21,7 @@
     
         
     <nav class="navbar">
-        <div class="logo"><a href="#hero">- MarceloDev -</a> </div>
+        <div class="logo">- MarceloDev -</div>
         <a href="#none" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -29,11 +29,13 @@
         </a>
         <div class="navbar-menu">
           <ul>
-            <li><a href="#about-me-page">About me</a></li>
-            <li><a href="#contact-page">Contact me</a></li>
-            <li><a href="#work-page">Work</a></li>
-            <li><a href="#setup-page">Setup</a></li>
-            <li><a href="#support-me-page">Support Me</a></li>
+            <li><a class="menu-item active" href="#hero">Home</a></li>
+            <li><a class="menu-item" href="#about-me-page">About me</a></li>
+            <li><a class="menu-item" href="#work-page">Work</a></li>
+            <li><a class="menu-item" href="#contact-page">Contact me</a></li>
+            
+            <!--  setup, not sure to add yet <li><a href="#setup-page">Setup</a></li> --> 
+            <li><a class="menu-item" href="#support-me-page">Support Me</a></li>
           </ul>
         </div>
 
@@ -52,12 +54,13 @@
                 
                         
                         <p class="about-me-text">I'm a Software Engineering Student</p>
+                        
                         <p class="about-me-text">I also love web development, as well as designing</p>
 
                     </div>
                     
 
-                    <img class="mva-img" src="img/favicon-w.png" alt="logo">
+                    <img class="hero-img" src="img/favicon-w.png" alt="logo">
 
                     
 
@@ -89,6 +92,8 @@
         
         <div class="spacer" style="height: 2rem;"></div>
 
+        
+
         <!--ABOUT ME PAGE STARTS-->
 
         <section>
@@ -112,25 +117,6 @@
 
         <div class="spacer" style="height: 2rem;"></div>
 
-        <!--CONTACT PAGE STARTS-->
-
-        <section id="contact-page">
-            <hr>
-            <div class="contact-page">
-                
-                <h1 class="page-title">Contact Me</h1>
-                <h1>to be updated...</h1>
-
-
-
-            </div>
-            
-        </section>
-        
-        <!--CONTACT PAGE ENDS-->
-
-        <div class="spacer" style="height: 2rem;"></div>
-
         <!--WORK PAGE STARTS-->
 
         <section>
@@ -150,7 +136,27 @@
 
         <div class="spacer" style="height: 2rem;"></div>
 
+        <!--CONTACT PAGE STARTS-->
+
+        <section id="contact-page">
+            <hr>
+            <div class="contact-page">
+                
+                <h1 class="page-title">Contact Me</h1>
+                <h1>to be updated...</h1>
+
+
+
+            </div>
+            
+        </section>
+        
+        <!--CONTACT PAGE ENDS-->
+
+        <div class="spacer" style="height: 2rem;"></div>
+
         <!--SETUP PAGE STARTS-->
+        <!--
         <section>
             <hr>
             <div id="setup-page" class="setup-page">
@@ -160,7 +166,7 @@
 
                     <div class="cards-container">
                         
-                        <!-- MACBOOK -->
+
                             <div class="card">
                                     <img class="card-img" src="img/setup/mac-alt.jpg" alt="macbook pro">
                                 <div class="card-body">
@@ -173,7 +179,7 @@
                                 </div>
                             </div>
 
-                            <!-- IPAD -->
+
                             <div class="card">
                                     <img class="card-img" src="img/setup/ipad-alt.jpg" alt="ipad pro">
                                 <div class="card-body">
@@ -186,7 +192,7 @@
                                 </div>
                             </div>
 
-                            <!-- KEYBOARD -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/kb-alt.jpg" alt="keyboard">
                             <div class="card-body">
@@ -199,7 +205,7 @@
                             </div>
                         </div>
 
-                        <!-- ALEXA -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/alexa-alt.jpg" alt="alexa">
                             <div class="card-body">
@@ -212,7 +218,7 @@
                             </div>
                         </div>
 
-                        <!-- AIRPODS -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/airpods-alt.jpg" alt="airpods pro">
                             <div class="card-body">
@@ -225,7 +231,7 @@
                             </div>
                         </div>
 
-                        <!-- PENCIL -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/pencil-alt.jpg" alt="apple pencil">
                             <div class="card-body">
@@ -238,7 +244,7 @@
                             </div>
                         </div>
 
-                        <!-- MOUSE -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/mouse.jpg" alt="mx master 3s mouse">
                             <div class="card-body">
@@ -251,7 +257,7 @@
                             </div>
                         </div>
 
-                        <!-- MONITOR -->
+
                         <div class="card">
                                 <img class="card-img" src="img/setup/monitor.jpg" alt="monitor">
                             <div class="card-body">
@@ -266,9 +272,12 @@
                     </div>
         </section>
         
-        
+        -->
 
         <!--SETUP PAGE ENDS-->
+
+
+        
 
         <div class="spacer" style="height: 2rem;"></div>
 
@@ -333,6 +342,7 @@
 
 
         <script src="js/navbar.js"></script>
+        <script src="js/navbar-links-active-toggle.js"></script>
     </footer>
 
 </body>

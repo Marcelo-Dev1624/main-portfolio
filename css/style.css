@@ -48,7 +48,7 @@ body{
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-clear);
+    background-color:var(--bg);
     color: white;
     z-index: 4;
     width: 100%;
@@ -62,7 +62,7 @@ body{
     color: white;
 }
 
-.logo a:hover{
+.logo:hover{
     color:var(--violet);
 }
 
@@ -80,22 +80,53 @@ a {
     align-items: center;
 }
 
-.navbar-menu li {
+.navbar-menu ul li {
     list-style: none;
     display: block;
+
 }
 
 .navbar-menu li a {
     text-decoration: none;
     color: white;
     padding: 1rem;
-    font-size: 1.2rem;
-    
+    font-size: 1.4rem;
+    transition: 200ms;
+    position: relative;
+    letter-spacing: .2rem;
+    margin: auto .5rem;
+    padding: 0 10px;
+}
+.navbar-menu li a::after{
+    content: "";
+    position: absolute;
+    background: var(--violet);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 200ms;
+}
+.navbar-menu  a:hover::after{
+    width: 100%;
+
 }
 
-.navbar-menu ul li :hover {
-background-color:var(--violet);
+.menu-item .active{
+    color: var(--violet);
+    border-bottom: 3px solid --violet;
+    width: 100%;
+    transition: 200ms ease-in;
+
 }
+
+
+
+
+.navbar-menu ul li :hover {
+    color:var(--violet);
+}
+
 
 .toggle-button {
     position: absolute;
@@ -180,9 +211,13 @@ background-color:var(--violet);
     font-size: 22px;
     animation: hero-load 650ms ease-out;
     transform: translateX(30px);
+    margin: .5rem auto;
+}
+.about-me-text:last-child{
+    margin-bottom: 4rem;
 }
 
-.mva-img{
+.hero-img{
     transform: translateX(-30px);
     align-items: flex-end;
     width:  300px;
@@ -389,6 +424,7 @@ hr {
     background-color: white;
     border: solid white;
     color:var(--violet);
+    transform: scale(1.2);
 }
 
 .thanks-container{
@@ -511,6 +547,7 @@ footer{
     .navbar-menu {
         display: none;
         width: 100%;
+        transition: 200ms;
     }
 
 
@@ -519,6 +556,7 @@ footer{
         flex-direction: column;
         display: block;
         margin: 0 0 1rem 0;
+        transition: 200ms;
     }
 
     .navbar-menu ul li{
@@ -526,6 +564,7 @@ footer{
         text-align: center;
         background-color: var(--bg-clear);
         padding: 1.3rem;
+        transition: 200ms;
     }
 
     .navbar-menu ul li:first-child{
@@ -534,6 +573,21 @@ footer{
     
     .navbar-menu ul li:hover{
         background-color: var(--violet);
+    }
+
+    .navbar-menu li a:hover{
+        color: white;
+    }
+
+    .navbar-menu li a::after{
+        content: "";
+        position: absolute;
+        background: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 200ms;
     }
 
     .navbar-menu ul li a {
@@ -548,6 +602,213 @@ footer{
 }
 
 /* NAVBAR OPTIMIZATION ENDS*/
+
+@media only screen and (max-width:768px) {
+    body{
+        display: block;
+        width: 100%;
+    }
+
+    .inner-hero{
+        width: 80%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .about-me-title, .about-me-text{
+        transform: translateX(0px);
+        animation: none;
+    }
+
+    .hero-img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 180px;
+        right: 30px;
+        animation: none;
+}
+
+
+    .logo{
+        margin: 1.5rem 0 0 1.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+        margin: 1.2rem 1.5rem 0rem 0;
+    }
+
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        transition: 200ms;
+    }
+
+
+    .navbar-menu ul {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        margin: 0 0 1rem 0;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li{
+        display: block;
+        text-align: center;
+        background-color: var(--bg-clear);
+        padding: 1.3rem;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li:first-child{
+        margin: 1.3rem 0 0 0 ;
+    }
+    
+    .navbar-menu ul li:hover{
+        background-color: var(--violet);
+    }
+
+    .navbar-menu li a:hover{
+        color: white;
+    }
+
+    .navbar-menu li a::after{
+        content: "";
+        position: absolute;
+        background: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li a {
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        display: block;
+        width: 100%;
+    }
+
+    .inner-hero{
+        width: 70%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .about-me-text{
+        margin: 2rem auto;
+    }
+
+    .about-me-title, .about-me-text{
+        transform: translateX(0px);
+        animation: none;
+    }
+
+    .hero-img{
+        display: none;
+}
+
+
+    .logo{
+        margin: 1.5rem 0 0 1.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+        margin: 1.2rem 1.5rem 0rem 0;
+    }
+
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        transition: 200ms;
+    }
+
+
+    .navbar-menu ul {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        margin: 0 0 1rem 0;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li{
+        display: block;
+        text-align: center;
+        background-color: var(--bg-clear);
+        padding: 1.3rem;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li:first-child{
+        margin: 1.3rem 0 0 0 ;
+    }
+    
+    .navbar-menu ul li:hover{
+        background-color: var(--violet);
+    }
+
+    .navbar-menu li a:hover{
+        color: white;
+    }
+
+    .navbar-menu li a::after{
+        content: "";
+        position: absolute;
+        background: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 200ms;
+    }
+
+    .navbar-menu ul li a {
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    html{
+        overflow: hidden;
+    }
+}
 
 
 
