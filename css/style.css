@@ -704,13 +704,18 @@ footer{
 }
 
 @media only screen and (max-width:600px) {
+    html{
+        overflow-x: hidden;
+    }
+
     body{
         display: block;
         width: 100%;
     }
 
     .inner-hero{
-        width: 70%;
+        margin-top: 3rem;
+        width: 75%;
         position: relative;
         justify-content: center;
         align-items: center;
