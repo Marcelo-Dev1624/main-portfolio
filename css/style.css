@@ -535,7 +535,7 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
 
     body{
         overflow-x: hidden;
@@ -557,8 +557,7 @@ a {
 
     .navbar-menu {
         display: none;
-        width: 100%;
-        transition: 200ms;
+        width: 90%;
     }
 
 
