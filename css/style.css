@@ -239,6 +239,7 @@ a {
     margin: .5rem;
     background-color: var(--violet-dark);
     vertical-align: auto;
+    transform: translateY(-52px);
     
 }
 
