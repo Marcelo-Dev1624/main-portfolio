@@ -38,7 +38,6 @@ body{
 
 .logo:hover{
     color:var(--violet);
-    font-size: 28px;
 }
 
 
@@ -56,15 +55,6 @@ body{
     margin: auto;
 }
 
-.logo {
-    font-size: 1.5rem;
-    margin: 1.5rem;
-    color: white;
-}
-
-.logo:hover{
-    color:var(--violet);
-}
 
 a {
     text-decoration: none;
@@ -590,14 +580,7 @@ a {
     }
 
     .navbar-menu li a::after{
-        content: "";
-        position: absolute;
-        background: white;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -5px;
-        transition: 200ms;
+        display: none;
     }
 
     .navbar-menu ul li a {
