@@ -621,6 +621,9 @@ hr {
         width: 100%;
     }
     
+    .hero{
+        margin: 3rem auto;
+    }
 
     .inner-hero{
         width: 80%;
@@ -778,7 +781,7 @@ hr {
     }
 
     .inner-hero{
-        margin-top: 2rem;
+        margin: 5rem auto;
         width: 85%;
         position: relative;
         justify-content: center;
