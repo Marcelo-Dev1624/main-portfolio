@@ -225,18 +225,20 @@ a {
     animation: hero-load-img 650ms ease-out;
 }
 
-hr {
-    border-top: 20px dotted var(--violet-dark);
-    -webkit-border-top: 20px dotted var(--violet-dark);;
-    -moz-border-top: 20px dotted var(--violet-dark);;
-    -khtml-border-top: 20px dotted var(--violet-dark);
-    border-bottom: 0 ;
-    border-left: 0 ;
-    border-right: 0 ;
-    width: 20%;
-    margin: 2rem 40% ;
+.hr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr div{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: .5rem;
+    background-color: var(--violet-dark);
     vertical-align: auto;
-    transform: translateY(-50px);
     
 }
 
