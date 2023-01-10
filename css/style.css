@@ -227,6 +227,9 @@ a {
 
 hr {
     border-top: 20px dotted var(--violet-dark);
+    -webkit-border-top: 20px dotted var(--violet-dark);;
+    -moz-border-top: 20px dotted var(--violet-dark);;
+    -khtml-border-top: 20px dotted var(--violet-dark);
     border-bottom: 0 ;
     border-left: 0 ;
     border-right: 0 ;
@@ -622,7 +625,7 @@ hr {
     }
     
     .hero{
-        margin: 3rem auto;
+        margin: 4rem auto;
     }
 
     .inner-hero{
@@ -630,6 +633,7 @@ hr {
         position: relative;
         justify-content: center;
         align-items: center;
+        height: 650px;
         
     }
 
