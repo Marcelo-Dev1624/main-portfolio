@@ -516,7 +516,8 @@ a {
 /*FOOTER STARTS*/
 
 .footer{
-    margin-top: 3rem;
+
+    margin-top: auto;
     display: flex;
     width: 100%;
     height: 6rem;
