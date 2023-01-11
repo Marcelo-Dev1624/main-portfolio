@@ -632,7 +632,7 @@ a {
     }
 
     .inner-hero{
-        width: 80%;
+        width: 8%;
         position: relative;
         justify-content: center;
         align-items: center;
@@ -645,7 +645,7 @@ a {
         font-weight: 800;
     }
 
-    .about-me-title, .about-me-text{
+    .hero-about-me-title, .hero-about-me-text{
         transform: translateX(0px);
         animation: none;
     }
