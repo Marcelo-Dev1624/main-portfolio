@@ -780,6 +780,11 @@ a {
                 
     .page-title{
         margin: .5rem auto;
+        font-size: 34px;
+    }
+
+    h1{
+        font-size: 28px;
     }
     
     .hero{
@@ -1015,6 +1020,10 @@ a {
 
     .support-me-text{
         margin: 1rem .5rem;
+    }
+
+    .support-me-page-thanks{
+        font-size: 34px;
     }
 
     .thanks-container{
