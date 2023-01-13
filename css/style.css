@@ -183,7 +183,7 @@ a {
     position: absolute;
     background-color: var(--bg-clear);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 700px;
     width: 1100px;
@@ -195,7 +195,7 @@ a {
 }
 
 .hero-text{
-    width: 700px;
+    width: 1000px;
 }
 
 
@@ -286,7 +286,7 @@ a {
 
 .about-me-page-title{
     margin: 1rem 0;
-    font-size:32px;
+    font-size:26px;
     color: #fff;
     font-weight: 800;
 }
@@ -806,6 +806,7 @@ a {
 
     .hero-text{
         width: 100%;
+        text-align: justify;
     }
 
     .hero-about-me-title{
@@ -922,21 +923,23 @@ a {
     }
     
     .about-me-page-title{
-        margin: 2rem auto;
-        font-size:28px;
+        margin: 1.5rem auto;
+        font-size:22px;
         color: #fff;
         font-weight: 800;
     }
     
     .about-me-text{
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.5rem;
+        margin: 1rem;
     }
     
     .about-me-text-container{
         display: flex;
         margin:  auto;
-        text-align: justify;
+        text-align: left;
         flex-direction: column;
         width: 80%;
         height: 100%;
