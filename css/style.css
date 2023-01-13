@@ -146,7 +146,7 @@ a {
 
 
 .page-title{
-    margin: .8rem 0;
+    margin: 2rem 0;
     font-size:44px;
     color: #fff;
     background: var(--gradient);
@@ -385,20 +385,24 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .social-media-icon{
-    font-size: 2rem;
-    display: flex;
+    font-size: 32px;
+    display:inline-block;
     cursor: pointer;
-    margin: 2rem 1rem;
-    padding: 1.5rem;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 1.5rem 0;
     border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
     position: relative;
-    color: #fff;
+    color: white;
     background-color: rgba(255, 255, 255, 0.1);
     transition: 300ms;
-
 }
 
 .social-media-icon::after {
@@ -612,6 +616,7 @@ a {
     height: 6rem;
     background-color: var(--bg-clear);
     align-items: center;
+    text-align: left;
 }
 
 .footer-text{
@@ -957,7 +962,7 @@ a {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 75%;
+        width: 90%;
         height: 100%;
         border-radius: 25px;
     }
@@ -971,10 +976,14 @@ a {
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
     }
 
     .email{
-        font-size: 28px;
+        margin: 3rem 0;
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -994,7 +1003,7 @@ a {
 
     
     .inner-section-support{
-        margin: auto;
+        margin: 0  0 3rem 0;
         width: 85%;
         position: relative;
         justify-content: center;
