@@ -103,11 +103,6 @@ a {
     bottom: -5px;
     transition: 200ms;
 }
-.navbar .navbar-menu ul li a:hover::after{
-    width: 100%;
-
-}
-
 
 .navbar .navbar-menu ul li.active a{
     color: var(--violet);
@@ -120,6 +115,22 @@ a {
     background: var(--violet);
     height: 3px;
     width: 100%;
+    left: 0;
+    bottom: -5px;
+    transition: 200ms;
+}
+
+.navbar .navbar-menu ul li.noactive a{
+    color: white;
+    position: relative;
+    }
+
+.navbar .navbar-menu ul li.noactive a::after{
+    content: "";
+    position: absolute;
+    background: var(--violet);
+    height: 3px;
+    width: 0;
     left: 0;
     bottom: -5px;
     transition: 200ms;

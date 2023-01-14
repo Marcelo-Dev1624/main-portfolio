@@ -8,6 +8,8 @@
     
     <link rel="shortcut icon" href="img/favicon-w.png" type="image/x-icon">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 
     <!--My stylesheet-->
     <link rel="stylesheet" href="css/style.css">
@@ -18,21 +20,21 @@
     
         
     <nav class="navbar">
-        <div class="logo"> <a class="logo-txt active" href="#hero">- MarceloDev -</a> </div>
+        <div class="logo"> <a class="logo-txt" href="#hero">- MarceloDev -</a> </div>
         <a href="#none" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navbar-menu">
           <ul>
-            <li class="menu-item active"><a href="#hero">Home</a></li>
-            <li class="menu-item" ><a href="#about-me-page">About me</a></li>
-            <li class="menu-item"><a  href="#work-page">Work</a></li>
-            <li class="menu-item"><a  href="#contact-page">Contact me</a></li>
+            <li class="menu-item active"><a data-toggle="tab" href="#hero">Home</a></li>
+            <li class="menu-item" ><a data-toggle="tab" href="#about-me-page">About me</a></li>
+            <li class="menu-item"><a data-toggle="tab" href="#work-page">Work</a></li>
+            <li class="menu-item"><a data-toggle="tab" href="#contact-page">Contact me</a></li>
             
             <!--  setup, not sure to add yet <li><a href="#setup-page">Setup</a></li> --> 
-            <li><a class="menu-item" href="#support-me-page">Support Me</a></li>
+            <li class="menu-item"><a data-toggle="tab" href="#support-me-page">Support Me</a></li>
           </ul>
         </div>
 
@@ -437,6 +439,8 @@
         <script src="js/navbar.js"></script>
         <script src="js/navbar-links-active-toggle.js"></script>
         <script src="js/collapse-navbar.js"></script>
+        <script src="js/active-page.js"></script>
+        
     </footer>
 
 </body>

@@ -1,18 +1,18 @@
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(".navbar-menu ul li");
-window.onscroll = () => {
-  var current = "";
+window.addEventListener('DOMContentLoaded', event => {
+    // Get the container element
+var btnContainer = document.getElementById("navbar-menu");
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (section.scrollTop >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("menu-item");
 
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.href.includes(current)) {
-      li.classList.add('active');
-    }
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("menu-item active");
+    current[0].className = current[0].className.replace("menu-item active", " menu-item");
+    this.className += " menu-item active";
   });
-};
+}
+
+})
+
