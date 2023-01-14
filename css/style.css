@@ -197,7 +197,7 @@ a {
 
 .inner-hero{
     position: absolute;
-    background-color: var(--bg-clear);
+    background-color: var(--bg-clear-transparent);
     display: flex;
     justify-content: space-between;
     align-items: center;
