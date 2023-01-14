@@ -20,6 +20,7 @@ html{
     --violet-dark:rgba(123, 87, 231,.2);
     --bg:#121212;
     --bg-clear:#1a1a1a;
+    --bg-clear-transparent:rgba(20,20,20,.8)
 }
 
 body{
@@ -814,6 +815,7 @@ a {
         justify-content: center;
         align-items: center;
         height: 650px;
+        background-color: var(--bg-clear-transparent);
         
     }
 
@@ -830,6 +832,7 @@ a {
     }
 
     .hero-about-me-text{
+        text-align: center;
         margin: 2rem auto;
         font-size: 22px
     }
@@ -965,6 +968,9 @@ a {
         border-radius: 20px;
         margin: 2rem 0 5rem 0;
     }
+    .about-me-img:hover{
+        transform: none;
+    }
 
 
     /* ABOUT ME ENDS*/
@@ -998,6 +1004,11 @@ a {
 
     .social-media-icons-container{
         flex-wrap: wrap;
+    }
+
+
+    .social-media-icon::after{
+        display: none;
     }
 
     .mail-container
