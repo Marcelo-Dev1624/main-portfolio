@@ -78,7 +78,7 @@ a {
 
 .navbar-menu ul li {
     list-style: none;
-    display: block;
+    display: inline-block;
 
 }
 
@@ -93,7 +93,7 @@ a {
     margin: auto .5rem;
     padding: 0 10px;
 }
-.navbar-menu li a::after{
+.navbar .navbar-menu ul li a::after{
     content: "";
     position: absolute;
     background: var(--violet);
@@ -103,22 +103,27 @@ a {
     bottom: -5px;
     transition: 200ms;
 }
-.navbar-menu  a:hover::after{
+.navbar .navbar-menu ul li a:hover::after{
     width: 100%;
 
 }
 
 
-
-.menu-item .active{
+.navbar .navbar-menu ul li.active a{
     color: var(--violet);
-    border-bottom: 3px solid --violet;
+    position: relative;
+    }
+
+.navbar .navbar-menu ul li.active a::after{
+    content: "";
+    position: absolute;
+    background: var(--violet);
+    height: 3px;
     width: 100%;
-    transition: 200ms ease-in;
-
+    left: 0;
+    bottom: -5px;
+    transition: 200ms;
 }
-
-
 
 
 .navbar-menu ul li :hover {
@@ -813,6 +818,7 @@ a {
         font-family: 'Nunito', sans-serif;
         font-weight: 800;
         font-size: 40px;
+        text-align: center;
     }
 
     .hero-about-me-text{

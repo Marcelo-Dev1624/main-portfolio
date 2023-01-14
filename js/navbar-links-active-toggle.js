@@ -1,12 +1,18 @@
-let navbar = document.getElementsByClassName('navbar');
-let navbarLinks = navbar.getElementsByClassName('menu-item');
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".navbar-menu ul li");
+window.onscroll = () => {
+  var current = "";
 
-for (var i =0; i<navbarLinks.length; i++)
-{
-    navbarLinks[i].addEventListener('click', function() {
-        var current = document.getElementsByClassName('active');
-        current[0].className = current[0].className.replace("active")
-        this.className += "active";
-    })
-}
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (section.scrollTop >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
 
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.href.includes(current)) {
+      li.classList.add('active');
+    }
+  });
+};
