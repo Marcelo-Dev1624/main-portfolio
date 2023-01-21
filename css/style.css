@@ -120,21 +120,6 @@ a {
     transition: 200ms;
 }
 
-.navbar .navbar-menu ul li.noactive a{
-    color: white;
-    position: relative;
-    }
-
-.navbar .navbar-menu ul li.noactive a::after{
-    content: "";
-    position: absolute;
-    background: var(--violet);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: 200ms;
-}
 
 
 .navbar-menu ul li :hover {
@@ -711,7 +696,8 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
+
 
     .logo{
         margin: 1.5rem 0 0 1.5rem;
@@ -748,6 +734,7 @@ a {
         background-color: var(--bg-clear);
         padding: 1.3rem;
         transition: 200ms;
+        margin: auto;
     }
 
     .navbar-menu ul li:first-child{
@@ -775,6 +762,7 @@ a {
     .navbar-menu.active {
         display: flex;
     }
+
 
     .menu-item{
         position: relative;
@@ -889,7 +877,7 @@ a {
     }
 
     .navbar-menu ul li:first-child{
-        margin: 1.1rem 0 0 0 ;
+        margin: 1rem 0 0 0 ;
     }
     
     .navbar-menu ul li:hover{
@@ -1087,9 +1075,10 @@ a {
 
 
 @media only screen and (max-width:768px) {
-    body{
+    html,body{
         display: block;
         width: 100%;
+        overflow-x: hidden;
     }
 
     /* NAV AND HERO STARTS*/
@@ -1486,14 +1475,13 @@ a {
 }
 
 
+@media only screen and (min-width:1024px) {
+    html{
 
-@media only screen and (max-width:1440px) {
-
+    }
 }
 
-@media only screen and (min-width:1440px) {
 
-}
 
 
 
