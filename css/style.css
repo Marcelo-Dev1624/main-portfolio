@@ -696,8 +696,7 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media only screen and (max-width: 1000px) {
-
+@media screen and (max-width: 768px) {
 
     .logo{
         margin: 1.5rem 0 0 1.5rem;
@@ -1134,81 +1133,6 @@ a {
         display: none;
 }
 
-
-
-
-    .logo{
-        margin: 1.5rem 0 0 1.2rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-        margin: 1.2rem 1.5rem 0rem 0;
-    }
-
-    .navbar-menu {
-        display: none;
-        width: 100%;
-        transition: 200ms;
-    }
-
-
-    .navbar-menu ul {
-        width: 100%;
-        flex-direction: column;
-        display: block;
-        margin: 0 0 1rem 0;
-        transition: 200ms;
-    }
-
-    .navbar-menu ul li{
-        display: block;
-        text-align: center;
-        background-color: var(--bg-clear);
-        padding: 1.2rem;
-        transition: 200ms;
-    }
-
-    .navbar-menu ul li:first-child{
-        margin: 1.1rem 0 0 0 ;
-    }
-    
-    .navbar-menu ul li:hover{
-        background-color: var(--violet);
-    }
-
-    .navbar-menu li a:hover{
-        color: white;
-    }
-
-    .navbar-menu li a::after{
-        content: "";
-        position: absolute;
-        background: white;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -5px;
-        transition: 200ms;
-    }
-    
-    .navbar-menu.active {
-        display: flex;
-        transition: 300ms;
-    }
-
-    .navbar-menu ul li a {
-        padding: .5rem 1rem;
-        font-size: 1.3rem;
-        width: 100%;
-    }
-
-    /* NAV AND HERO ENDS*/
 
     
 
