@@ -738,7 +738,7 @@ a {
     }
 
     .navbar-menu ul li:first-child{
-        margin: 1.3rem 0 0 0 ;
+        margin: 1.2rem 0 0 0 ;
     }
     
     .navbar-menu li:hover{
@@ -758,7 +758,6 @@ a {
     .navbar-menu ul li a {
         padding: .5rem 1rem;
         font-size: 1.3rem;
-        display: inline-flex;
     }
 
     .navbar-menu.active {
@@ -768,6 +767,13 @@ a {
 
     .menu-item{
         position: relative;
+    }
+
+    .menu-item a{
+        display: inline-flex;
+        width: 100%;
+        margin: auto;
+        justify-content: right;
     }
 
 
