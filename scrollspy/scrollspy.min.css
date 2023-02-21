@@ -1,0 +1,20 @@
+:root{
+  --gradient:linear-gradient(271deg,#1ea7dd 30%,#b27feb 50%,#d1dfa2 80%,#ffa0c1 94%);
+  --violet:rgb(123, 87, 231);
+  --violet-dark:rgba(123, 87, 231,.2);
+  --bg:#121212;
+  --bg-clear:#1a1a1a;
+  --bg-clear-transparent:rgba(20,20,20,.8)
+}
+
+.scrollspy-indicator {
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: var(--violet);
+  bottom: 0;
+  left: 0;
+  transform: translateY(8px);
+  transition: width 0.3s, left 0.1s;
+}
+

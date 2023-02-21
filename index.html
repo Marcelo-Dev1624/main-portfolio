@@ -8,7 +8,8 @@
     <title>- MarceloDev -</title>
     
     <link rel="shortcut icon" href="img/favicon-w.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon-w.png" sizes="120x120"
+    <link rel="apple-touch-icon" href="img/favicon-w.png" sizes="120x120">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,38 +18,41 @@
     <!--My stylesheet-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bgpattern.css">
+    <link rel="stylesheet" href="scrollspy/scrollspy.min.css">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
     <div class="wrapper">
          <nav class="navbar">
-        <div class="logo"> <a class="logo-txt" href="#hero">- MarceloDev -</a> </div>
-        <a href="#none" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-menu" id="navbar-menu">
-          <ul>
-            <li class="menu-item active"><a data-toggle="tab" href="#hero">Home</a></li>
-            <li class="menu-item" ><a data-toggle="tab" href="#about-me-page">About me</a></li>
-            <li class="menu-item"><a data-toggle="tab" href="#work-page">Work</a></li>
-            <li class="menu-item"><a data-toggle="tab" href="#contact-page">Contact me</a></li>
-            
-            
-            <!--  setup, not sure to add yet <li><a href="#setup-page">Setup</a></li> --> 
-            <li class="menu-item"><a data-toggle="tab" href="#support-me-page">Support Me</a></li>
-          </ul>
-        </div>
+            <div class="logo"> <a class="logo-txt" href="#hero">- MarceloDev -</a> </div>
+
+            <a href="#none" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </a>
+
+            <div class="navbar-menu" id="navbar-menu">
+                    <ul>
+                    <li><a class="menu-item active" data-target="hero">Home</a></li>
+                    <li><a class="menu-item" data-target="about-me-page">About me</a></li>
+                    <li><a class="menu-item" data-target="work-page">Work</a></li>
+                    <li><a class="menu-item" data-target="contact-page">Contact me</a></li>
+                    
+                    
+                    <!--  setup, not sure to add yet <li><a href="#setup-page">Setup</a></li> --> 
+                    <li><a class="menu-item" data-target="support-me-page">Support Me</a></li>
+                    <span class="scrollspy-indicator"></span>
+                </ul>
+            </div>
 
         
       </nav>
     
 
         <!-- HERO STARTS -->
-        <section id="hero">
+        <section id="hero" class="section">
 
             <!--Patterns part -->
 
@@ -111,7 +115,7 @@
                 <div></div>
         </div>
 
-        <section id="about-me-page">
+        <section id="about-me-page" class="section">
             
                 <div class="about-me-page">
                     
@@ -174,7 +178,7 @@
                 <div></div>
         </div>
 
-        <section id="work-page">
+        <section id="work-page" class="section">
             
             <div  class="work-page">
                 
@@ -200,7 +204,7 @@
         </div>
         <!--CONTACT PAGE STARTS-->
 
-        <section id="contact-page">
+        <section id="contact-page" class="section">
             
             <div class="contact-page">
                 <div class="inner-contact">
@@ -378,7 +382,7 @@
                 <div></div>
             </div>
             
-        <section id="support-me-page" >
+        <section id="support-me-page" class="section">
             
                 <div class="support-me-page">
                     <div class="inner-section-support">
@@ -426,11 +430,6 @@
 
         <!--SUPPORT ME PAGE ENDS-->
 
-
-    <section>
-        
-    </section>
-
     
 
     <footer>
@@ -447,7 +446,8 @@
         <script src="js/navbar-links-active-toggle.js"></script>
         <script src="js/collapse-navbar.js"></script>
         <script src="js/active-page.js"></script>
-        <script src="js/active-link-on-scroll.js"></script>
+        <script src="scrollspy/scrollspy.min.js"></script>
+        <script src="js/scroll-to-top.js"></script>
 
         
     </footer>
