@@ -7,8 +7,10 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "flex") {
       content.style.display = "none";
+      body.classList.toggle("blur");
     } else {
       content.style.display = "flex";
+      body.classList.toggle("blur");
     }
   });
 }

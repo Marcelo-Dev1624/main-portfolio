@@ -49,13 +49,14 @@ body{
 
 
 
-.navbar {
+header {
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--bg-clear-transparent);
+    background-color:var(--bg);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
     z-index: 4;
     width: 100%;
@@ -72,11 +73,6 @@ a {
 
 .navbar-menu ul {
     display: flex;
-    position: relative;
-    margin: 0 2rem;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
 }
 
 .navbar-menu ul li {
@@ -95,32 +91,7 @@ a {
     margin: auto .5rem;
     padding: 0 10px;
 }
-/*
-.navbar .navbar-menu ul li a::after{
-    content: "";
-    position: absolute;
-    background: var(--violet);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: 200ms;
-}
 
-
-
-.navbar .navbar-menu ul li.active a::after{
-    content: "";
-    position: absolute;
-    background: var(--violet);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -5px;
-    transition: 200ms;
-}
-
-*/
 
 .navbar-menu ul li :hover {
     color:var(--violet);
@@ -177,6 +148,7 @@ a {
 .inner-hero{
     position: absolute;
     background-color: var(--bg-clear-transparent);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -696,6 +668,10 @@ a {
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
 @media screen and (max-width: 720px) {
+    body.blur > *:not(.navbar-menu){
+        filter: blur(10px);
+    }
+
     .scrollspy-indicator{
         display: none;
     }
@@ -704,10 +680,12 @@ a {
         margin: 1.5rem 0 0 1.5rem;
     }
 
-    .navbar {
+    header {
         flex-direction: column;
         align-items: flex-start;
         top: 0;
+        margin-bottom: .8rem;
+        background-color: var(--bg-clear-transparent);
     }
 
     .toggle-button {
@@ -716,16 +694,56 @@ a {
     }
 
     .navbar-menu {
-        display: none;
-        width: 100%;
-
+        background-color: var(--bg);
+        backdrop-filter: blur(10px);
+        height: 0;
+        position: absolute;
+        top:80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        transition: .2s;
+        overflow: hidden;
     }
 
+    .navbar-menu ul{
+        display: block;
+        width: 100%;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .navbar-menu li {
+        margin-bottom: 2.5rem;
+    }
+
+    .navbar-menu li a{
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .menu-item.active{
+        color:var(--violet);
+    }
+
+    .navbar-menu.active{
+        height: 500px;
+    }
+
+    .navbar-menu.active ul {
+        opacity: 1;
+    }
+
+/*
 
     .navbar-menu ul {
         width: 100%;
         flex-direction: column;
-        display: block;
+        display: inline-block;
         margin: 0 0 1rem 0;
         transition: 200ms;
     }
@@ -734,14 +752,13 @@ a {
         display: block;
         text-align: center;
         background-color: var(--bg-clear-transparent);
+        backdrop-filter: blur(10px);
         padding: 1rem;
         transition: 200ms;
         margin: auto;
     }
 
-    .navbar-menu ul li:first-child{
-        margin-top: .9rem;
-    }
+
     
     .navbar-menu li:hover{
         background-color: var(--violet);
@@ -773,15 +790,13 @@ a {
 
     .menu-item{
         position: relative;
-    }
-
-    .menu-item a{
-        display: inline-flex;
+        display: inline-block;
         width: 100%;
         margin: auto;
         justify-content: right;
     }
 
+*/
 
 }
 
@@ -819,6 +834,7 @@ a {
         align-items: center;
         height: 650px;
         background-color: var(--bg-clear-transparent);
+    
         
     }
 

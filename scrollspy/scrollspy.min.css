@@ -14,7 +14,15 @@
   background: var(--violet);
   bottom: 0;
   left: 0;
-  transform: translateY(8px);
+  transform: translateY(-12px);
   transition: width 0.3s, left 0.1s;
+}
+
+.navbar-menu ul li a::after{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: auto;
+  background-color: var(--violet);
 }
 
