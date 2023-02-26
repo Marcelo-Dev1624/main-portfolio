@@ -54,9 +54,9 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--bg);
+    background-color:var(--bg-clear-transparent);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
     color: white;
     z-index: 4;
     width: 100%;
