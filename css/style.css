@@ -38,11 +38,8 @@ body{
 .logo{
     font-size: 1.9rem ;
     color: #fff;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 2rem;
-    font-weight: 700;
+    font-weight: 550;
     transition: 200ms;
 }
 
@@ -57,7 +54,8 @@ body{
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--bg);
+    background-color:var(--bg-clear-transparent);
+    backdrop-filter: blur(10px);
     color: white;
     z-index: 4;
     width: 100%;
@@ -131,21 +129,15 @@ a {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    top: .5rem;
+    right: .5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
 
 
 .page-title{
@@ -702,7 +694,10 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
+    .scrollspy-indicator{
+        display: none;
+    }
 
     .logo{
         margin: 1.5rem 0 0 1.5rem;
@@ -737,14 +732,14 @@ a {
     .navbar-menu ul li{
         display: block;
         text-align: center;
-        background-color: var(--bg-clear);
+        background-color: var(--bg-clear-transparent);
         padding: 1rem;
         transition: 200ms;
         margin: auto;
     }
 
     .navbar-menu ul li:first-child{
-        margin: 0;
+        margin-top: .9rem;
     }
     
     .navbar-menu li:hover{
@@ -768,7 +763,7 @@ a {
 
     .navbar .navbar-menu ul li a.active{
         color: var(--violet);
-        }
+    }
     
     .navbar-menu.active {
         display: flex;
