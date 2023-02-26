@@ -148,7 +148,7 @@ a {
 
 .inner-hero{
     position: absolute;
-    background-color: var(--bg-clear-transparent);
+    background-color: var(--bg-transparent);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -668,7 +668,7 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
 
     .scrollspy-indicator{
         display: none;
@@ -763,6 +763,15 @@ a {
 
     h1{
         font-size: 24px;
+        font-weight: 600;
+        margin: 1rem 0;
+        text-align: justify;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5rem;
+        margin: 1.5rem 0;
     }
     
     .hero{
@@ -770,32 +779,35 @@ a {
     }
 
     .inner-hero{
-        width: 8%;
+        width: 80%;
         position: relative;
         justify-content: center;
         align-items: center;
-        height: 650px;
+        height: 500px;
         background-color: var(--bg-clear-transparent);
-    
+        margin: 1.5rem 0;
         
     }
 
     .hero-text{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         text-align: justify;
     }
 
     .hero-about-me-title{
-        font-family: 'Nunito', sans-serif;
         font-weight: 800;
         font-size: 40px;
         text-align: center;
+        margin: 2rem 0;
     }
 
     .hero-about-me-text{
+        margin: 2rem 0;
         text-align: center;
-        margin: 2rem auto;
-        font-size: 22px
+        font-size: 26px
     }
 
     .hero-about-me-title, .hero-about-me-text{
@@ -837,7 +849,7 @@ a {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.5rem;
-        margin: 1rem;
+
     }
     
     .about-me-text-container{
@@ -969,269 +981,6 @@ a {
     }
 
 
-}
-
-
-@media only screen and (max-width:768px) {
-    html,body{
-        display: block;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    /* NAV AND HERO STARTS*/
-                
-    .page-title{
-        margin: .5rem auto;
-        font-size: 34px;
-    }
-
-    h1{
-        font-size: 24px;
-    }
-    
-    .hero{
-        margin: 4rem auto;
-    }
-
-    .inner-hero{
-        width: 8%;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        height: 650px;
-        background-color: var(--bg-clear-transparent);
-        
-    }
-
-    .hero-text{
-        width: 100%;
-        text-align: justify;
-    }
-
-    .hero-about-me-title{
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .hero-about-me-text{
-        text-align: center;
-        margin: 2rem auto;
-        font-size: 22px
-    }
-
-    .hero-about-me-title, .hero-about-me-text{
-        transform: translateX(0px);
-        animation: none;
-    }
-
-
-    .hero-img{
-        display: none;
-}
-
-
-    
-
-    /* ABOUT ME STARTS*/
-    
-    .inner-about-me{
-        display: flex;
-
-        position: relative;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
-    }
-    
-    .about-me-page-title{
-        margin: 1.5rem auto;
-        font-size:22px;
-        color: #fff;
-        font-weight: 800;
-    }
-    
-    .about-me-text{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.5rem;
-        margin: 1rem;
-    }
-    
-    .about-me-text-container{
-        display: flex;
-        margin:  auto;
-        text-align: left;
-        flex-direction: column;
-        width: 80%;
-        height: 100%;
-    }
-    
-    .about-me-img{
-        width: 300px;
-        height: 300px;
-        border-radius: 20px;
-        margin: 2rem 0 5rem 0;
-    }
-    .about-me-img:hover{
-        transform: none;
-    }
-
-
-    /* ABOUT ME ENDS*/
-
-
-    /* CONTACT STARTS*/
-    
-
-    .contact-page{
-        margin: 5rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 60px;
-        margin-top: -60px;
-        position: relative;
-        min-height: 100vh;
-        width: 100%;
-    }
-    
-    .inner-contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 90%;
-        height: 100%;
-        border-radius: 25px;
-    }
-
-    .social-media-icons-container{
-        flex-wrap: wrap;
-    }
-
-
-    .social-media-icon::after{
-        display: none;
-    }
-
-    .mail-container
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    .email{
-        margin: 3rem 0;
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    
-
-    .social-media {
-        margin: 5rem auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    /* CONTACT ENDS*/
-
-
-    /*SUPPORT STARTS*/
-
-    
-    .inner-section-support{
-        margin: 0;
-        width: 700px;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: var(--bg);
-        
-    }
-
-
-    .support-me-text{
-        margin: 1rem 0;
-        font-size: 22px;
-    }
-
-    .thanks-container{
-        flex-direction: column;
-        margin: 3rem 0;
-    }
-
-    .support-me-btn{
-        padding: 13px 50px;
-        white-space: nowrap;
-    }
-
-    .support-icon{
-        opacity: 0;
-    }
-
-    /* SUPPORT ENDS*/
-
-
-    .footer-text{
-        font-size: 14px;
-    }
-
-
-}
-
-@media only screen and (max-width:1024px) {
-
-    body{
-        display: block;
-        width: 100%;
-    }
-
-    .inner-hero{
-        margin: 5rem auto;
-        width: 85%;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    .about-me-text{
-        margin: 2rem auto;
-    }
-
-    .about-me-title, .about-me-text{
-        transform: translateX(0px);
-        animation: none;
-    }
-
-    .hero-img{
-        display: none;
-}
-
-
-}
-
-
-@media only screen and (min-width:1024px) {
-    html{
-
-    }
 }
 
 
