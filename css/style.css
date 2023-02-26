@@ -19,6 +19,7 @@ html{
     --violet:rgb(123, 87, 231);
     --violet-dark:rgba(123, 87, 231,.2);
     --bg:#121212;
+    --bg-transparent:rgba(18, 18, 18, 0.95);
     --bg-clear:#1a1a1a;
     --bg-clear-transparent:rgba(20,20,20,.8)
 }
@@ -54,15 +55,14 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--bg-clear-transparent);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color:var(--bg-transparent);
     color: white;
     z-index: 4;
     width: 100%;
     height: 5rem;
     margin: auto;
 }
+
 
 
 a {
@@ -669,9 +669,6 @@ a {
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
 @media screen and (max-width: 720px) {
-    body.blur > *:not(.navbar-menu){
-        filter: blur(10px);
-    }
 
     .scrollspy-indicator{
         display: none;
@@ -682,11 +679,13 @@ a {
     }
 
     header {
+        position: fixed;
         flex-direction: column;
         align-items: flex-start;
         top: 0;
         margin-bottom: .8rem;
-        background-color: var(--bg-clear-transparent);
+        background: var(--bg-transparent);
+
     }
 
     .toggle-button {
@@ -695,10 +694,9 @@ a {
     }
 
     .navbar-menu {
-        background-color: var(--bg);
-        backdrop-filter: blur(10px);
-        height: 0;
         position: absolute;
+        background: var(--bg-transparent);
+        height: 0;
         top:80px;
         left: 0;
         right: 0;
@@ -706,6 +704,8 @@ a {
         transition: .2s;
         overflow: hidden;
     }
+    
+
 
     .navbar-menu ul{
         display: block;
@@ -739,65 +739,6 @@ a {
         opacity: 1;
     }
 
-/*
-
-    .navbar-menu ul {
-        width: 100%;
-        flex-direction: column;
-        display: inline-block;
-        margin: 0 0 1rem 0;
-        transition: 200ms;
-    }
-
-    .navbar-menu ul li{
-        display: block;
-        text-align: center;
-        background-color: var(--bg-clear-transparent);
-        backdrop-filter: blur(10px);
-        padding: 1rem;
-        transition: 200ms;
-        margin: auto;
-    }
-
-
-    
-    .navbar-menu li:hover{
-        background-color: var(--violet);
-        color: white;
-    }
-
-    .navbar-menu li a:hover{
-        color: white;
-    }
-
-
-    .navbar-menu li a::after{
-        display: none;
-    }
-
-    .navbar-menu ul li a {
-        padding: .5rem 1rem;
-        font-size: 1.1rem;
-    }
-
-    .navbar .navbar-menu ul li a.active{
-        color: var(--violet);
-    }
-    
-    .navbar-menu.active {
-        display: flex;
-    }
-
-
-    .menu-item{
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        margin: auto;
-        justify-content: right;
-    }
-
-*/
 
 }
 
