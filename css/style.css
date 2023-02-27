@@ -668,7 +668,7 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1200px) {
 
     .scrollspy-indicator{
         display: none;
@@ -733,6 +733,7 @@ a {
 
     .navbar-menu.active{
         height: 500px;
+        width: 100%;
     }
 
     .navbar-menu.active ul {
