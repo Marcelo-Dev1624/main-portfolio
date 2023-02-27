@@ -668,7 +668,7 @@ a {
 
 /* NAVBAR MOBILE OPTIMIZATIONS */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 
     .scrollspy-indicator{
         display: none;
@@ -1220,7 +1220,13 @@ a {
 }
 
 @media screen and (min-width:1024px){
-    
+    html,body{
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+   
 }
 
 
