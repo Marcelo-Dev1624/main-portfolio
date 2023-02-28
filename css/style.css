@@ -163,31 +163,28 @@ a {
 }
 
 .hero-text{
-    width: 1000px;
+    width: 600px;
+    text-align: center;
 }
 
 
 .hero-about-me-title{
-    margin: 5rem 0;
+    margin: 5rem auto;
     font-size:52px;
     color: #fff;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
-    animation: hero-load 650ms ease-out;
-    transform: translateX(30px);
 
 }
 
 .hero-about-me-text{
     font-size: 26px;
-    animation: hero-load 650ms ease-out;
-    transform: translateX(30px);
-    margin:auto;
+    margin: auto;
 }
 .hero-about-me-text:last-child{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .hero-img{
@@ -196,7 +193,6 @@ a {
     width:  300px;
     height: 300px;
     border-radius: 50%;
-    animation: hero-load-img 650ms ease-out;
 }
 
 .hr{
@@ -784,6 +780,7 @@ a {
         position: relative;
         justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
         height: 500px;
         background-color: var(--bg-clear-transparent);
         margin: 1.5rem 0;
@@ -791,24 +788,22 @@ a {
     }
 
     .hero-text{
-        width: 100%;
+        width: 250px;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        text-align: justify;
     }
 
     .hero-about-me-title{
         font-weight: 800;
         font-size: 40px;
+        margin: 1rem auto;
         text-align: center;
-        margin: 2rem 0;
     }
 
     .hero-about-me-text{
-        margin: 2rem 0;
+        margin: 2rem auto;
         text-align: center;
-        font-size: 26px
+        font-size: 20px
     }
 
     .hero-about-me-title, .hero-about-me-text{
@@ -818,7 +813,10 @@ a {
 
 
     .hero-img{
-        display: none;
+        width: 100px;
+        height: 100px;
+        transform: translateX(0px);
+        margin: 1rem 0;
 }
 
     /* NAV AND HERO ENDS*/
@@ -996,7 +994,7 @@ a {
                 
     .page-title{
         margin: .5rem auto;
-        font-size: 34px;
+        font-size: 36px;
     }
 
     h1{
@@ -1017,11 +1015,13 @@ a {
     }
 
     .inner-hero{
-        width: 80%;
+        width: 75%;
         position: relative;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        text-align: center;
+        flex-direction: column-reverse;
+        height: 650px;
         background-color: var(--bg-clear-transparent);
         margin: 1.5rem 0;
         
@@ -1037,7 +1037,7 @@ a {
 
     .hero-about-me-title{
         font-weight: 800;
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
         margin: 2rem 0;
     }
@@ -1045,7 +1045,7 @@ a {
     .hero-about-me-text{
         margin: 2rem 0;
         text-align: center;
-        font-size: 26px
+        font-size: 24px
     }
 
     .hero-about-me-title, .hero-about-me-text{
@@ -1055,7 +1055,12 @@ a {
 
 
     .hero-img{
-        display: none;
+        animation: none;
+        margin-bottom: 1rem;
+        width: 200px;
+        height: 200px;
+        transform: translatex(0px);
+        
 }
 
     /* NAV AND HERO ENDS*/
