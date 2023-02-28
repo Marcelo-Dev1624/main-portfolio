@@ -538,26 +538,6 @@ a {
     opacity: 0;
 }
 
-.support-me-btn{
-    font-size: 24px;
-    font-weight: 600;
-    padding: 14px 60px;
-    margin:1rem  4rem;
-    background-color: white;
-    border: solid white;
-    color:var(--violet);
-    outline: none;
-    border-radius: 20px;
-    box-shadow: 0 0 8 2 var(--bg-clear);
-    transition: 300ms ;
-}
-
-.support-me-btn:hover{
-    background-color: var(--violet);
-    border: solid var(--violet);
-    color:white;
-    transform: scale(1.2);
-}
 
 .thanks-container{
     margin: 1rem 4rem;    
@@ -755,7 +735,7 @@ a {
                 
     .page-title{
         margin: .5rem auto;
-        font-size: 34px;
+        font-size: 36px;
     }
 
     h1{
@@ -803,7 +783,7 @@ a {
     .hero-about-me-text{
         margin: 2rem auto;
         text-align: center;
-        font-size: 20px
+        font-size: 20px;
     }
 
     .hero-about-me-title, .hero-about-me-text{
@@ -893,7 +873,7 @@ a {
     .inner-contact{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         width: 90%;
         height: 100%;
@@ -917,10 +897,11 @@ a {
         justify-content: center;
         align-items: center;
         width: 90%;
+        margin: 2rem;
     }
 
     .email{
-        margin: 3rem 0;
+        margin: 1rem 0;
         font-size: 24px;
         font-weight: bold;
     }
@@ -947,14 +928,18 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: justify;
         background-color: var(--bg);
         
     }
 
+    .inner-text-support{
+        width: 40%;
+    }
+
 
     .support-me-text{
-        margin: 1rem 0;
+        margin: 1rem ;
         font-size: 22px;
     }
 
@@ -963,10 +948,6 @@ a {
         margin: 3rem 0;
     }
 
-    .support-me-btn{
-        padding: 13px 50px;
-        white-space: nowrap;
-    }
 
     .support-icon{
         opacity: 0;
@@ -1006,8 +987,8 @@ a {
     h2{
         font-weight: 500;
         font-size: 20px;
-        line-height: 1.5rem;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
+        text-align: justify;
     }
     
     .hero{
@@ -1091,7 +1072,6 @@ a {
     .about-me-text{
         font-weight: 500;
         font-size: 20px;
-        line-height: 1.5rem;
 
     }
     
@@ -1100,7 +1080,7 @@ a {
         margin:  auto;
         text-align: left;
         flex-direction: column;
-        width: 80%;
+        width: 60%;
         height: 100%;
     }
     
@@ -1160,7 +1140,7 @@ a {
         text-align: center;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 50%;
     }
 
     .email{
@@ -1202,15 +1182,15 @@ a {
         font-size: 22px;
     }
 
+    .inner-text-support{
+        width: 70%;
+    }
+
     .thanks-container{
         flex-direction: column;
         margin: 3rem 0;
     }
 
-    .support-me-btn{
-        padding: 13px 50px;
-        white-space: nowrap;
-    }
 
     .support-icon{
         opacity: 0;
