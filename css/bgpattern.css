@@ -52,7 +52,7 @@
     width: 20px;
     height: 20px;
     animation-delay: 4s;
-    animation-duration: 6s;
+    animation-duration: 10s;
     background-color: var(--yellow);
 }
 
@@ -60,7 +60,7 @@
     left: 70%;
     width: 20px;
     height: 20px;
-    animation-delay: 2s;
+    animation-delay: 5s;
     background-color: var(--pink);
 }
 
@@ -82,10 +82,11 @@
 }
 
 .circles li:nth-child(6){
-    left: 75%;
+    left: 5%;
     width: 110px;
     height: 110px;
-    animation-delay: 3s;
+    animation-delay: 5s;
+    animation-duration: 25s;
     background-color: var(--blue);
 }
 
@@ -93,7 +94,7 @@
     left: 35%;
     width: 150px;
     height: 150px;
-    animation-delay: 6s;
+    animation-delay: 9s;
     background-color: var(--purple);
 }
 
@@ -110,7 +111,7 @@
     left: 20%;
     width: 15px;
     height: 15px;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-duration: 30s;
     background-color: var(--blue);
 }
@@ -119,8 +120,8 @@
     left: 85%;
     width: 150px;
     height: 150px;
-    animation-delay: 0s;
-    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-duration: 18s;
     background-color: var(--yellow);
 }
 
