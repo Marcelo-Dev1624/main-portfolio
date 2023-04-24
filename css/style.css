@@ -15,7 +15,7 @@ html{
 }
 
 :root{
-    --gradient:linear-gradient(271deg,#1ea7dd 30%,#b27feb 50%,#d1dfa2 80%,#ffa0c1 94%);
+    --gradient:linear-gradient(to right, 271deg,rgb(30, 167, 221) 30%,rgb(178, 127, 235) 50%,rgb(209, 223, 162) 80%,rgb(255, 160, 193) 94%);
     --violet:rgb(123, 87, 231);
     --violet-dark:rgba(123, 87, 231,.2);
     --bg:#121212;
@@ -116,7 +116,7 @@ a {
 
 
 .page-title{
-    margin: 2.5rem 0;
+    margin-bottom: 2.5rem ;
     font-size:44px;
     color: #fff;
     background: var(--gradient);
@@ -283,6 +283,13 @@ a {
     transition: 300ms;
     z-index: 4;
     box-shadow: var(--box-shadow);
+
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(271deg, rgb(30, 167, 221),rgb(178, 127, 235) ,rgb(209,223, 162) ,rgb(255, 160, 193)) border-box;
+    border-radius: 25px;
+    border: 5px solid transparent;
+
+
 }
 
 .about-me-img:hover{
