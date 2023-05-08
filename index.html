@@ -31,6 +31,8 @@
         rel="stylesheet">
 
 
+
+
 </head>
 
 <body>
@@ -265,17 +267,21 @@
                     <h1 class="page-title">¡Contact Me!</h1>
                     <h2 style="text-align: center;">For any business inquiries, here you can leave me your message👇🏼
                     </h2>
-                    <form class="email-form">
+
+                    <form class="email-form" action="https://formsubmit.co/01ae055efdeda3e68df68accc776bb70" method="POST">
                         <div class="email-form-input-group">
 
-                            <input class="email-form-input" type="text" id="sender-name" required
+                            <input class="email-form-input" type="text" name="Name" id="sender-name" required
                                 placeholder="Enter your name">
-                            <input class="email-form-input" type="email" id="email-sender" required
+                            <input class="email-form-input" type="email" name="Email" id="email-sender" required
                                 placeholder="Enter your email">
 
-                            <textarea class="email-form-txtarea" id="email-form-txt" rows="10"
-                                placeholder="How can I help you?"></textarea>
+                                <input type="hidden" name="_subject" value="New message from Inquiry!">
 
+                                <input type="hidden" name="_next" value="https://marcelodev.net/thanks-for-your-message.html">
+
+                            <textarea class="email-form-txtarea" id="email-form-txt" name="Message" rows="10"
+                                placeholder="How can I help you?"></textarea>
 
                         </div>
 
@@ -505,9 +511,7 @@
             data-description="Support me on Buy me a coffee!" data-message="¡Thank you for visiting!"
             data-color="#BD5FFF" data-position="right" data-x_margin="18" data-y_margin="18"></script>
 
-        <!-- SMTP-JS Email sender -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="js/smtp-email.js"></script>
+    
 
 
         <script src="js/navbar.js"></script>
