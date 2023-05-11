@@ -16,7 +16,9 @@ html{
 
 :root{
     --gradient:linear-gradient(to right, 271deg,rgb(30, 167, 221) 30%,rgb(178, 127, 235) 50%,rgb(209, 223, 162) 80%,rgb(255, 160, 193) 94%);
-    --violet:rgb(123, 87, 231);
+    --white:#fff;
+    --dim-white:#d8d8d8;
+    --violet:#BD5FFF;
     --violet-dark:rgba(123, 87, 231,.2);
     --bg:#121212;
     --bg-transparent:rgba(18, 18, 18, 0.95);
@@ -36,8 +38,14 @@ body{
 h1{
     font-family: 'Poppins',sans-serif;
 }
-h1,h2{
+h1,h2,h3,h4,h5{
     margin: 1rem 0;
+}
+
+.hidden{
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 /*NAV BAR STARTS */
@@ -261,7 +269,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     width: 1400px;
-    height: 800px;
+    height: auto;
     border-radius: 25px;
     margin: 2rem;
 }
@@ -518,7 +526,6 @@ a {
 /* WORK PAGE STARTS */
 
 .work-page{
-    margin: 5rem 0;
     background-color:  var(--bg);
     display: flex;
     justify-content: center;
@@ -531,6 +538,87 @@ a {
     width: 100%;
 }
 
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 5rem auto
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    background-color: var(--bg-clear);
+    padding: 10rem auto;
+    border-radius: 20px;
+    margin: 4rem;
+}
+
+
+.card-img {
+    width: 100%;
+    border: solid rgb(184, 184, 184);
+    border-bottom: none;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-clear);
+    padding: 1rem;
+    margin: 0;
+    border: solid rgb(184, 184, 184);
+    border-radius: 0 0 20px 20px ;
+}
+
+.card-text{
+    width: 100%;
+}
+
+.card-text h1{
+    font-size: 30px;
+    margin: 1rem 0;
+}
+.card-text h3{
+    color: var(--dim-white);
+    margin: 1rem 0;
+}
+
+.card-btn{
+    background-color: var(--violet);
+    display: inline-flex;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 2.5% 10%;
+    font-size: 22px;
+    margin: 1rem 0;
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.card-btn:hover{
+    background-color: whitesmoke;
+    color: var(--bg-clear);
+
+}
 
 /* WORK PAGE FINISHES */
 
@@ -550,43 +638,6 @@ a {
     position: relative;
 }
 
-
-.cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
-    margin: 2rem auto 5rem auto;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 200px;
-    background-color: var(--bg-clear);
-    padding: 10rem auto;
-    border-radius: 20px;
-    margin: 8rem 2rem;
-}
-
-
-.card-img {
-    width: 100%;
-    border: solid grey;
-    border-bottom: none;
-    border-radius: 20px 20px 0 0 ;
-}
-
-.card-body{
-    width: 100%;
-    background-color: var(--bg-clear);
-    padding: 1rem;
-    margin: 0;
-    border: solid grey;
-    border-radius: 0 0 20px 20px ;
-}
 
 /* SETUP PAGE FINISHES */
 
@@ -858,7 +909,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        height: 500px;
+        height: auto;
         background-color: var(--bg-clear-transparent);
         margin: 1.5rem 0;
         
@@ -972,8 +1023,8 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: 100%;
+        width: 100%;
+        height: auto;
         border-radius: 25px;
     }
 
@@ -994,6 +1045,7 @@ a {
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: 100%;
         margin: 2rem;
     }
 
@@ -1003,11 +1055,7 @@ a {
         font-weight: bold;
     }
 
-    .mail-container{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-}
+
 
 .email-form{
     display: flex;
