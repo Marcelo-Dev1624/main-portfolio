@@ -1005,7 +1005,6 @@ a {
     /* WORK PAGE STARTS */
 
     .projects-container{
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1017,12 +1016,12 @@ a {
     .card{
         display: inline-flex;
         flex-direction: column;
-        width: 500px;
+        width: 400px;
         height: auto;
         background-color: var(--bg-clear);
         padding: 10rem auto;
         border-radius: 20px;
-        margin: 4rem;
+        margin: 2rem 1.5rem;
     }
 
 
