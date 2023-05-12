@@ -17,7 +17,7 @@ html{
 :root{
     --gradient:linear-gradient(to right, 271deg,rgb(30, 167, 221) 30%,rgb(178, 127, 235) 50%,rgb(209, 223, 162) 80%,rgb(255, 160, 193) 94%);
     --white:#fff;
-    --dim-white:#d8d8d8;
+    --dim-white:#c1c1c1;
     --violet:#BD5FFF;
     --violet-dark:rgba(123, 87, 231,.2);
     --bg:#121212;
@@ -544,7 +544,7 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    margin: 5rem auto
+    margin: 3rem auto
 }
 
 .cards-container{
@@ -564,8 +564,9 @@ a {
     background-color: var(--bg-clear);
     padding: 10rem auto;
     border-radius: 20px;
-    margin: 4rem;
+    margin: 3rem 2rem;
 }
+
 
 
 .card-img {
@@ -1001,6 +1002,89 @@ a {
 
     /* ABOUT ME ENDS*/
 
+    /* WORK PAGE STARTS */
+
+    .projects-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 3rem auto
+    }
+    
+    
+    .card{
+        display: inline-flex;
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+        background-color: var(--bg-clear);
+        padding: 10rem auto;
+        border-radius: 20px;
+        margin: 4rem;
+    }
+
+
+    
+    
+    .card-img {
+        width: 100%;
+        border: solid rgb(184, 184, 184);
+        border-bottom: none;
+        border-radius: 20px 20px 0 0 ;
+    }
+    
+    .card-body{
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-clear);
+        padding: 1rem;
+        margin: 0;
+        border: solid rgb(184, 184, 184);
+        border-radius: 0 0 20px 20px ;
+    }
+    
+    .card-text{
+        width: 100%;
+    }
+    
+    .card-text h1{
+        font-size: 28px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .card-text h3{
+        color: var(--dim-white);
+        font-size: 18px;
+        margin: 1rem 0;
+    }
+    
+    .card-btn{
+        background-color: var(--violet);
+        display: inline-flex;
+        color: whitesmoke;
+        border: none;
+        outline: none;
+        width: 100%;
+        border-radius: 8px;
+        padding: 2.5%;
+        font-size: 20px;
+        margin: .5rem 0;
+        font-family: 'Poppins',sans-serif;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    .card-btn:hover{
+        background-color: whitesmoke;
+        color: var(--bg-clear);
+    
+    }
+
+    /* WORK PAGE ENDS */
+
 
     /* CONTACT STARTS*/
     
@@ -1318,6 +1402,87 @@ a {
 
 
     /* ABOUT ME ENDS*/
+
+     /* WORK PAGE STARTS */
+
+     .projects-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 3rem auto
+    }
+    
+    
+    .card{
+        display: inline-flex;
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+        background-color: var(--bg-clear);
+        padding: 10rem auto;
+        border-radius: 20px;
+        margin: 4rem;
+    }
+    
+    
+    .card-img {
+        width: 100%;
+        border: solid rgb(184, 184, 184);
+        border-bottom: none;
+        border-radius: 20px 20px 0 0 ;
+    }
+    
+    .card-body{
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-clear);
+        padding: 1rem;
+        margin: 0;
+        border: solid rgb(184, 184, 184);
+        border-radius: 0 0 20px 20px ;
+    }
+    
+    .card-text{
+        width: 100%;
+    }
+    
+    .card-text h1{
+        font-size: 28px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .card-text h3{
+        color: var(--dim-white);
+        font-size: 18px;
+        margin: 1rem 0;
+    }
+    
+    .card-btn{
+        background-color: var(--violet);
+        display: inline-flex;
+        color: whitesmoke;
+        border: none;
+        outline: none;
+        width: 100%;
+        border-radius: 5px;
+        padding: 2.5% 10%;
+        font-size: 22px;
+        margin: .5rem 0;
+        font-family: 'Poppins',sans-serif;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    .card-btn:hover{
+        background-color: whitesmoke;
+        color: var(--bg-clear);
+    
+    }
+
+    /* WORK PAGE ENDS */
 
 
     /* CONTACT STARTS*/
