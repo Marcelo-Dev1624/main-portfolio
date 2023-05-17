@@ -405,7 +405,7 @@ a {
     border: none;
     outline: none;
     border-radius: 10px;
-    padding: 2.5% 15%;
+    padding: 2% 15%;
     font-size: 22px;
     margin: 1rem;
     font-family: 'Poppins',sans-serif;
@@ -606,9 +606,9 @@ a {
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 2.5% 10%;
+    padding: 1.8% 10%;
     font-size: 22px;
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-family: 'Poppins',sans-serif;
     justify-content: center;
     cursor: pointer;
@@ -621,6 +621,25 @@ a {
 
 }
 
+.coming-soon-btn{
+    background-color: transparent;
+    display: inline-flex;
+    color: whitesmoke;
+    border: solid var(--dim-white);
+    outline: none;
+    border-radius: 5px;
+    padding: 1.8% 10%;
+    font-size: 22px;
+    margin: .5rem 0;
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    cursor: not-allowed;
+    transition: .2s ease-in-out;
+}
+
+.coming-soon-card-img{
+    filter: grayscale(100);
+}
 /* WORK PAGE FINISHES */
 
 /* SETUP PAGE STARTS */
@@ -1056,6 +1075,7 @@ a {
     .card-text h3{
         color: var(--dim-white);
         font-size: 18px;
+        text-align: justify;
         margin: 1rem 0;
     }
     
@@ -1080,6 +1100,23 @@ a {
         background-color: whitesmoke;
         color: var(--bg-clear);
     
+    }
+
+    .coming-soon-btn{
+        background-color: var(--bg);
+        display: inline-flex;
+        color: whitesmoke;
+        border: solid var(--dim-white);
+        outline: none;
+        width: 100%;
+        border-radius: 8px;
+        padding: 2.5%;
+        font-size: 20px;
+        margin: .5rem 0;
+        font-family: 'Poppins',sans-serif;
+        justify-content: center;
+        cursor: not-allowed;
+        transition: .2s ease-in-out;
     }
 
     /* WORK PAGE ENDS */
@@ -1130,6 +1167,10 @@ a {
         width: 100%;
         height: 100%;
         margin: 2rem;
+    }
+
+    .mail-container h2{
+        width: 80%;
     }
 
     .email{
@@ -1211,7 +1252,6 @@ a {
     color: var(--bg-clear);
 
 }
-
     
 
     .social-media {
@@ -1455,6 +1495,7 @@ a {
     .card-text h3{
         color: var(--dim-white);
         font-size: 18px;
+        text-align: justify;
         margin: 1rem 0;
     }
     
@@ -1479,6 +1520,23 @@ a {
         background-color: whitesmoke;
         color: var(--bg-clear);
     
+    }
+
+    .coming-soon-btn{
+        background-color: transparent;
+        display: inline-flex;
+        color: whitesmoke;
+        border: solid var(--dim-white);
+        outline: none;
+        width: 100%;
+        border-radius: 5px;
+        padding: 2.5% 10%;
+        font-size: 22px;
+        margin: .5rem 0;
+        font-family: 'Poppins',sans-serif;
+        justify-content: center;
+        cursor: not-allowed;
+        transition: .2s ease-in-out;
     }
 
     /* WORK PAGE ENDS */
