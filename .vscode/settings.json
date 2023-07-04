@@ -2,5 +2,6 @@
     "liveServer.settings.port": 5501,
     "editor.wordWrap": "on",
     "prettier.proseWrap": "always",
-    "workbench.editor.wrapTabs": false
+    "workbench.editor.wrapTabs": false,
+    "editor.cursorSmoothCaretAnimation": "on"
 }
