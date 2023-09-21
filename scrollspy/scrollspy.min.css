@@ -1,7 +1,7 @@
 :root{
   --gradient:linear-gradient(271deg,#1ea7dd 30%,#b27feb 50%,#d1dfa2 80%,#ffa0c1 94%);
-  --violet:rgb(123, 87, 231);
-  --violet-dark:rgba(123, 87, 231,.2);
+  --main-accent:#b27feb;
+  --main-accent-dark:rgba(178, 127, 235, .2);
   --bg:#121212;
   --bg-clear:#1a1a1a;
   --bg-clear-transparent:rgba(20,20,20,.8)
@@ -11,7 +11,7 @@
   position: absolute;
   height: 3px;
   width: 0;
-  background: var(--violet);
+  background: var(--main-accent);
   bottom: 0;
   left: 0;
   transform: translateY(-12px);
@@ -23,6 +23,6 @@
   content: "";
   height: 3px;
   width: auto;
-  background-color: var(--violet);
+  background-color: var(--main-accent);
 }
 

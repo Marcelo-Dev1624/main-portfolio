@@ -6,7 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
-    caret-color: var(--violet);
+    caret-color: var(--main-accent);
 }
 
 ::selection{
@@ -18,8 +18,8 @@ html{
     --gradient:linear-gradient(to right, 271deg,rgb(30, 167, 221) 30%,rgb(178, 127, 235) 50%,rgb(209, 223, 162) 80%,rgb(255, 160, 193) 94%);
     --white:#fff;
     --dim-white:#c1c1c1;
-    --violet:#BD5FFF;
-    --violet-dark:rgba(123, 87, 231,.2);
+    --main-accent:#b27feb;
+    --main-accent-dark:rgba(178, 127, 235, .2);
     --bg:#121212;
     --bg-transparent:rgba(18, 18, 18, 0.95);
     --bg-clear:#1a1a1a;
@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5{
 }
 
 .logo:hover{
-    color:var(--violet);
+    color:var(--main-accent);
 }
 
 
@@ -115,7 +115,7 @@ a {
 
 
 .navbar-menu ul li :hover {
-    color:var(--violet);
+    color:var(--main-accent);
 }
 
 
@@ -229,7 +229,7 @@ a {
     height: 25px;
     width: 25px;
     margin: .5rem;
-    background-color: var(--violet-dark);
+    background-color: var(--main-accent-dark);
     vertical-align: auto;
     transform: translateY(-52px);
     
@@ -400,7 +400,7 @@ a {
 }
 
 .email-form-btn{
-    background-color: var(--violet);
+    background-color: var(--main-accent);
     color: whitesmoke;
     border: none;
     outline: none;
@@ -491,7 +491,7 @@ a {
     border-radius: 50%;
     content: '';
     box-sizing: content-box;
-    box-shadow: 0 0 0 3px var(--violet);
+    box-shadow: 0 0 0 3px var(--main-accent);
     top: 0;
     left: 0;
     opacity: 0;
@@ -501,7 +501,7 @@ a {
   
   
   .social-media-icon:hover{
-    background-color: var(--violet);
+    background-color: var(--main-accent);
     color: white;
     
   
@@ -600,7 +600,7 @@ a {
 }
 
 .card-btn{
-    background-color: var(--violet);
+    background-color: var(--main-accent);
     display: inline-flex;
     color: whitesmoke;
     border: none;
@@ -703,7 +703,7 @@ a {
 }
 
 .support-icon{
-    color: var(--violet);
+    color: var(--main-accent);
     font-size: 200;
     opacity: 0;
 }
@@ -874,7 +874,7 @@ a {
     }
 
     .menu-item.active{
-        color:var(--violet);
+        color:var(--main-accent);
     }
 
     .navbar-menu.active{
@@ -1081,7 +1081,7 @@ a {
     }
     
     .card-btn{
-        background-color: var(--violet);
+        background-color: var(--main-accent);
         display: inline-flex;
         color: whitesmoke;
         border: none;
@@ -1235,7 +1235,7 @@ a {
 }
 
 .email-form-btn{
-    background-color: var(--violet);
+    background-color: var(--main-accent);
     color: whitesmoke;
     border: none;
     outline: none;
@@ -1502,7 +1502,7 @@ a {
     }
     
     .card-btn{
-        background-color: var(--violet);
+        background-color: var(--main-accent);
         display: inline-flex;
         color: whitesmoke;
         border: none;
@@ -1649,7 +1649,7 @@ a {
 }
 
 .email-form-btn{
-    background-color: var(--violet);
+    background-color: var(--main-accent);
     color: whitesmoke;
     border: none;
     outline: none;
